@@ -773,7 +773,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  height: 65vh;
+  height: 100vh;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -781,6 +781,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   -webkit-justify-content: center;
   justify-content: center;
 }
+
+.landing .logo img {
+  width: 250px;
+}
+
 /* line 14, ../../../sass/layout/_home.sass */
 
 .landing .tagline {
