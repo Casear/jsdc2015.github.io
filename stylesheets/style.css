@@ -734,6 +734,14 @@ header .languages li a {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+@media (min-width: 48em) {
+  .landing .activity {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 .intro {
@@ -764,8 +772,9 @@ a.typeform-share {
   color: #f1f1f1;
   border: none;
   font-family: "Roboto", sans-serif;
-  padding: 5px 10px;
-  margin: 0 10px;
+  font-size: 1.5em;
+  padding: 10px 10px;
+  margin: 10px 10px;
 }
 a.typeform-share.speaker {
   background-color: #3096b2;
