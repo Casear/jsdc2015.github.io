@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head lang="zh">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" sizes="16x16 32x32" href="favicon.ico?v=2">
+    <title>JSDC 2015</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <ul class="languages">
+          <li><a href="/en">English</a></li>
+        </ul>
+      </header>
+      <section class="landing cd-intro">
+        <div class="video">
+          <video src="../video/background.mp4" autoplay="" muted="" loop=""></video>
+        </div>
+        <div class="background-container">
+          <div class="logo"><img src="../images/logo.png" alt="JSDC"></div>
+          <h1 class="tagline cd-headline letters type"><span>Build </span><span class="cd-words-wrapper waiting"><b class="is-visible">Anything</b><b>Website</b><b>Webapp</b><b>Mobile App</b><b>Arduino</b><b>Raspberry Pi</b><b>Robot</b></span><span> with JavaScript</span></h1>
+          <div class="activity"><a href="https://jsdc2015.typeform.com/to/JIc9v2" data-mode="1" target="_blank" class="typeform-share link speaker">成為講者</a><a href="https://jsdc2015.typeform.com/to/dgmSSy" data-mode="1" target="_blank" class="typeform-share link sponsor">贊助我們</a></div>
+        </div>
+      </section>
+      <section class="intro">
+        <div class="container-box">
+          <h1 class="title">What's JSDC</h1>
+          <div class="divider"></div>
+          <p class="info">
+            This year, JSDC is breaking the barriers by integrating the technical power from 
+            independent developers, enterprises, framewords, architectures, and practices. 
+            We aim to make the knowledge globally interchangeable, while makeing all attendees 
+            reimagine JavaScript within and beyond the dogma. Our new thinking will be a catalyst 
+            for further improvement of the architectures. fortification of the teams, and optimization 
+            of the development process.
+          </p><a href="https://jsdc2015.typeform.com/to/Z3xnIk" data-mode="1" target="_blank" class="typeform-share link contact">聯繫我們</a>
+        </div>
+      </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="../scripts/app.js"></script>
+    <script>
+      var qs, js, q, s, d = document,
+        gi = d.getElementById,
+        ce = d.createElement,
+        gt = d.getElementsByTagName,
+        id = 'typef_orm',
+        b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+      if (!gi.call(d, id)) {
+        js = ce.call(d, 'script');
+        js.id = id;
+        js.src = b + 'share.js';
+        q = gt.call(d, 'script')[0];
+        q.parentNode.insertBefore(js, q)
+      }
+      id = id + '_';
+      if (!gi.call(d, id)) {
+        qs = ce.call(d, 'link');
+        qs.rel = 'stylesheet';
+        qs.id = id;
+        qs.href = b + 'share-button.css';
+        s = gt.call(d, 'head')[0];
+        s.appendChild(qs, s)
+      }
+    </script>
+  </body>
+</html>
