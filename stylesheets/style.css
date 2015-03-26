@@ -697,6 +697,12 @@ header .languages li a {
   overflow: hidden;
 }
 .landing .video {
+  background: url(/images/background.jpg) no-repeat;
+  background-position: center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
