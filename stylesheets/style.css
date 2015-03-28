@@ -618,8 +618,10 @@ header .languages li a {
 }
 
 #nav {
-  background-color: #fff;
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
 }
 #nav .nav-menu {
   font-size: 1.5em;
@@ -628,6 +630,8 @@ header .languages li a {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 #nav .nav-menu li {
   -moz-transition-duration: 0.3s;
@@ -641,6 +645,12 @@ header .languages li a {
 }
 #nav .nav-menu li:hover {
   background-color: #d9d9d9;
+}
+#nav .nav-menu li:before {
+  content: "/";
+}
+#nav .nav-menu li:first-child:before {
+  content: "";
 }
 
 .landing, .intro {
