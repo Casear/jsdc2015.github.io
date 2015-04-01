@@ -619,9 +619,16 @@ header .languages li a {
 
 #nav {
   width: 100%;
-  position: absolute;
+  position: fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
   bottom: 0;
   z-index: 2;
+}
+@media (min-width: 48em) {
+  #nav {
+    position: absolute;
+    background: transparent;
+  }
 }
 #nav .nav-menu {
   font-size: 1.5em;
@@ -664,9 +671,14 @@ header .languages li a {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  height: 120vh;
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 48em) {
+  .landing {
+    height: 100vh;
+  }
 }
 .landing .video {
   background: url(/images/background.jpg) no-repeat;
@@ -724,6 +736,12 @@ header .languages li a {
 
 .intro {
   background-color: #f1f1f1;
+  padding-bottom: 50px;
+}
+@media (min-width: 48em) {
+  .intro {
+    padding-bottom: 0;
+  }
 }
 .intro .container-box {
   max-width: 750px;
